@@ -1,0 +1,12 @@
+spring:
+  config:
+    import: consul://${spring.cloud.consul.host}:${spring.cloud.consul.port}
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      config:
+        format: yaml
+        data-key: ${spring.application.name}
+      discovery:
+        instanceId: ${spring.application.name}:${random.value}

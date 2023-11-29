@@ -1,0 +1,12 @@
+# IntelliJ
+.idea/
+*.iml
+
+# Java
+target/
+
+# Node.j
+node_modules/
+
+# MacOS
+*/.DS_Store/
