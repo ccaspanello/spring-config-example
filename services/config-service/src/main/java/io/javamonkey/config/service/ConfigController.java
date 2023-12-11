@@ -14,6 +14,7 @@ import org.springframework.web.context.annotation.RequestScope;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@CrossOrigin(origins = "http://localhost:5173")
 @RequestScope
 @RestController
 public class ConfigController {
